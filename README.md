@@ -1,4 +1,4 @@
-<h1 align="left"> mongoose-uuid-plugin 👋</h1>
+<h1 align="left"> mongooseuuid 👋</h1>
 
 
 > generate random unique uuid for Mongoose schema
@@ -11,7 +11,7 @@
 ## Install
 
 ```sh
-$ npm install mongoose-uuid-plugin --save
+$ npm install @alakermi/mongooseuuid --save
 ```
 
 ## Use
