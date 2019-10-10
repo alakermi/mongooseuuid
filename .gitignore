@@ -1,0 +1,7 @@
+/dist
+node_modules
+.vscode
+*.log
+coverage
+.npmrc
+/.nyc_output

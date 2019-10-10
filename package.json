@@ -1,0 +1,92 @@
+{
+  "name": "mongooseuuid",
+  "version": "0.0.0",
+  "description": "generate random unique uuid for Mongoose schema",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alakermi/mongooseuuid.git"
+  },
+  "keywords": [
+    "mongoose",
+    "plugin",
+    "uuid",
+    "random",
+    "schema",
+    "hooks"
+  ],
+  "author": "Abdelhak Akermi",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && node dist/test.js",
+    "test": "tsc && ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "xo"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "async": "^3.1.0",
+    "ava": "^2.4.0",
+    "coveralls": "^3.0.6",
+    "lint-staged": "^9.2.5",
+    "mongodb-memory-server": "^5.2.3",
+    "mongoose": "^5.5.8",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-xo": "^0.16.0",
+    "typescript": "^3.6.3",
+    "xo": "^0.25.3"
+  },
+  "peerDependencies": {
+    "@types/mongoose": "5.x",
+    "mongoose": "5.x"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "files": [
+      "tests/*.spec.ts"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/alakermi/mongooseuuid/issues"
+  },
+  "homepage": "https://github.com/alakermi/mongooseuuid#readme",
+  "engines": {
+    "npm": ">=5.5.0",
+    "node": ">=9.3.0"
+  }
+}
