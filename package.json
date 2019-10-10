@@ -1,5 +1,5 @@
 {
-  "name": "mongooseuuid",
+  "name": "@alakermi/mongooseuuid",
   "version": "0.0.0",
   "description": "generate random unique uuid for Mongoose schema",
   "main": "dist/index.js",
