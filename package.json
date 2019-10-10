@@ -1,6 +1,6 @@
 {
   "name": "@alakermi/mongooseuuid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "generate random unique uuid for Mongoose schema",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -59,7 +59,7 @@
     "extends": "@istanbuljs/nyc-config-typescript",
     "include": [
       "src/**/*.ts"
-       ],
+    ],
     "all": true,
     "reporter": [
       "text",
