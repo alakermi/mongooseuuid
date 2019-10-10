@@ -1,6 +1,7 @@
 <h1 align="left"> mongooseuuid 👋</h1>
 
-
+<span class="badge-npmversion"><a href="https://www.npmjs.com/package/@alakermi/mongooseuuid" title="View this project on NPM"><img src="https://img.shields.io/npm/v/@alakermi/mongooseuuid?color=green" alt="NPM version" /></a></span>
+[![Coverage Status](https://coveralls.io/repos/github/alakermi/mongooseuuid/badge.svg?branch=master)](https://coveralls.io/github/alakermi/mongooseuuid?branch=master)
 > generate random unique uuid for Mongoose schema
 
 
