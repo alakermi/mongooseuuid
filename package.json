@@ -24,8 +24,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && node dist/test.js",
-    "test": "tsc && ava",
-    "coverage": "nyc ava ",
+    "test": "tsc && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "xo"
   },
   "dependencies": {
