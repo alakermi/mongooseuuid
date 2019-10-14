@@ -12,11 +12,13 @@
 
 ## Install
 
+To use mongooseuuid for an existing mongoose schema you'll have to require and plugin mongooseuuid into the existing schema.
+
 ```sh
 $ npm install @alakermi/mongooseuuid --save
 ```
 
-## Use
+## Usage
 
 ```js
 import mongoose from 'mongoose';
@@ -26,11 +28,11 @@ mongoose.connect('mongodb://localhost/Default');
  
 // Default options
 let options = {
-  field:"uniqueid" // default field name for mongoose schema
+  field:"myid" // default options 'uniqueid'
 };
  
 // Add the plugin to the schema with default options
-let Schema = mongoose.Schema({ uniqueid: 'string', });
+let Schema = mongoose.Schema({ myid: 'string', });
 Schema.plugin(mongooseuuid(options));
  
 // Create a model
@@ -41,7 +43,9 @@ let guest = new Guest({})
 await guest.save()
 
 ```
+## Options
 
+* field: name of the field  to affec uuid for it . The default is 'uniqueid'. this options is required or it will throw an error
 ## Author
 
 👤 **Abdelhak Akermi**
